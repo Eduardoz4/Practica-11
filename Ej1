@@ -1,0 +1,32 @@
+// Practica 11           
+// Fecha de entrega: 11/01/2020        Morales Salinas Eduardo 
+// Seccion de librerias 
+#include<stdio.h>
+/* 
+ Este programa trabaja con aritmética de apuntadores para acceder a los  valores de un arreglo. 
+*/ 
+int main () { 
+
+// crea el arreglo con dimension de 5 
+ int arr[] = {5, 4, 3, 2, 1}; 
+ // Aqui crea el puntero 
+ int *apArr; 
+ //Le estamos dando la direccion de la memoria para que empiece en la inicial 
+ apArr = arr; 
+  
+ printf("int arr[] = {5, 4, 3, 2, 1};\n"); 
+ printf("apArr = &arr[0]\n"); 
+  // x es igual al puntero en la posicion 0
+ int x = *apArr; 
+ printf("x = *apArr \t -> x = %d\n", x); 
+ // Le suma uno a la posicion 
+  
+ x = *(apArr+1); 
+ printf("x = *(apArr+1) \t -> x = %d\n", x); 
+ // Le suma 2 a la posicion 
+  
+ x = *(apArr+2); 
+ printf("x = *(apArr+1) \t -> x = %d\n", x); 
+  
+ return 0; 
+}
