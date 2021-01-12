@@ -1,0 +1,21 @@
+// Practica 11           
+// Fecha de entrega: 11/01/2020        Morales Salinas Eduardo 
+// Seccion de librerias 
+#include<stdio.h>
+/* 
+ Este programa muestra el manejo de cadenas en lenguaje C. */ 
+int main(){ 
+// Declara una variable de tipo caracter llamada palabra 
+ char palabra[20]; 
+ // Variable entera 
+ int i=0; 
+ printf("Ingrese una palabra: "); 
+ // Escanea lo que ingreso el usuario 
+ scanf("%s", palabra); 
+ printf("La palabra ingresada es: %s\n", palabra); 
+ // El ciclo va imprimiendo el arreglo hasta que este sea menor a 20 y le suma uno al contador 
+ for (i = 0 ; i < 20 ; i++){ 
+ printf("%c\n", palabra[i]); 
+ } 
+ return 0; 
+}
